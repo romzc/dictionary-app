@@ -1,0 +1,36 @@
+.form_container {
+    width: 100%;
+    max-width: 660px;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #f4f4f4  inset !important;
+}
+
+.form_input {
+    background-color: #f4f4f4;
+    flex: 1;
+    height: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form_input:focus {
+    outline: none;
+}
+
+.form_search {
+    cursor: pointer;
+    width: 1.3rem;
+    filter: invert(52%) sepia(67%) saturate(7337%) hue-rotate(258deg) brightness(96%) contrast(96%);
+}

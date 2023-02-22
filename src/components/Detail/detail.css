@@ -1,0 +1,39 @@
+.detail_container {
+    width: 100%;
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.detail_container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_text-light {
+    color: var(--dark-black-text-color);
+}
+
+.header_text-dark {
+    color: var(--light-white-text-color);
+}
+
+.header_phonetic {
+    color: var(--main-purple);
+}
+
+.detail_play {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #e9d0fa;
+}
+
+.detail_play-icon {
+    width: 2rem;
+    filter: invert(52%) sepia(67%) saturate(7337%) hue-rotate(258deg) brightness(96%) contrast(96%);
+}
