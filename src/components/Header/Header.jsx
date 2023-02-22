@@ -19,14 +19,15 @@ const Header = () => {
             </div>
             <form className='form_state_header'>
 
-                <select 
+                <select
+                    className={`form_select ${state.font} form-${state.theme}`}
                     name="font" 
                     id="font"
                     onChange={changeFont}
                 >
-                    <option value="serif">Serif</option>
-                    <option value="sans_serif">Sans Serif</option>
-                    <option value="monospace">Monospace</option>
+                    <option className='serif' value="serif">Serif</option>
+                    <option className='sans_serif' value="sans_serif">Sans Serif</option>
+                    <option className='monospace' value="monospace">Monospace</option>
                 </select>
 
                 

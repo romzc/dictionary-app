@@ -36,6 +36,13 @@
     height: 1.5rem;
     border-radius: 12px;
     background-color: var(--dark-background);
+    cursor: pointer;
+
+    
+    background-image: url(../../assets/moon.svg);
+    background-size: 0.8rem 0.8rem;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
 }
 
 .toggleTheme::before {
@@ -53,11 +60,17 @@
 
 input:checked + .toggleTheme{
     background-color: var(--light-background);
+
+    background-image: url(../../assets/light_mode.svg);
+    background-size: 1rem 1rem;
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    
 }
 
 input:checked + .toggleTheme::before {
     background-color: var(--dark-background);
-    transform: translate(2.7rem, 0.01rem);
+    transform: translate(2.79rem, 0.01rem);
 }
 
 
@@ -67,4 +80,24 @@ input:checked + .toggleTheme::before {
 
 #theme {
     display: none;
+}
+
+.form-light {
+    background-color: var(--light-background);
+    border-radius: 6px;
+}
+
+.form-dark {
+    background-color: var(--dark-background);
+    color: var(--light-text-color);
+    border: 1px solid var(--light-text-color);
+    border-radius: 6px;
+}
+
+.form_select {
+    padding: 0 0.5rem 0 0.5rem;
+    outline: none;
+    cursor: pointer;
+    width: 6rem;
+    font-weight: bold;
 }

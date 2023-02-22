@@ -6,6 +6,12 @@ import './information.css'
 const Information = ({data}) => {
 
     const { state } = useContext(DictionaryContext)
+    const [playing, setPlaying] = React.useState(false);
+    
+
+    const handlePlay = () => {
+        setPlaying(prev => !prev)
+    }
 
     const meaningsList = data.meanings.map((mean, index) => (
         <div key={index} className="meaning_container">
@@ -49,8 +55,18 @@ const Information = ({data}) => {
                 <h1 className={`title header_text-${state.theme}`}>{data?.word}</h1>
                 <span className='header_phonetic'>{data?.phonetic}</span>
             </div>
-            <div className='detail_play'>
-                <img className='detail_play-icon' src={PlayIcon} alt="play" />
+            <div onClick={handlePlay}  className='detail_play'>
+                <img 
+                    className='detail_play-icon' 
+                    src={PlayIcon} 
+                    alt="play" 
+                />
+                <audio
+                    loop
+                    preload='auto'
+                    autoPlay={playing}
+                    src={data?.phonetics[0]?.audio}
+                />
             </div>
         </div>
         {meaningsList}
