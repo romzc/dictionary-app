@@ -70,7 +70,10 @@ const Information = ({data}) => {
             </div>
         </div>
         {meaningsList}
-
+        <img 
+            src='https://rventura-bucket01.s3.amazonaws.com/imagenes/Captura+de+pantalla+2023-02-15+164832.png'
+            width={650} 
+        />
     </>
   )
 }
