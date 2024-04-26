@@ -49,7 +49,8 @@ function App() {
     setQuery(value)
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
     if(!query) { return } /* do nothing */
     if( fetchWord == query ) { return } /* word already got */
     
